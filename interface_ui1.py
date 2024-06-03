@@ -4173,7 +4173,7 @@ class Ui_Dialog(object):
         titre=self.prenom_2.text()
         if all(c.isalnum() or c.isspace() for c in titre) and (len(titre)>0):
             self.erreurni_3.setStyleSheet("color: rgb(92, 121, 134);\nfont: 87 9pt 'Segoe UI Black';\n")
-            self.erreurni_3.setText("titre valide ✓")
+            self.erreurni_3.setText("titre valid ✓")
             e["titre"]=titre
         else:
             ok=False
